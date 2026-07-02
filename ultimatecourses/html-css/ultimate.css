@@ -1,0 +1,58 @@
+body{
+    font-family: 'Heebo';
+}
+header{
+    display: flow-root;
+}
+nav li{
+    float: right;
+}
+.container{
+display: flow-root;
+}
+.lede {
+  line-height: 1.6;
+  background-color: rgba(255, 20, 147, 0.3);
+  background-image: url("assets/swirl.jpg");
+}
+.call-out {
+  background-color: greenyellow;
+}
+article {
+  border: 2px solid lightgrey;
+  color: indigo;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  word-spacing: 10px;
+  padding: 20px;
+  margin: 30px 40px;
+  width: 90vh;
+}
+a {
+  border: 1px solid deeppink;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+p {
+  width: 400px;
+  box-sizing: border-box;
+}
+aside {
+  border: 1px solid indigo;
+  padding: 10px;
+  width: 33%;
+  box-sizing: border-box; 
+  float: right; 
+}
+img {
+  float: right;
+}
