@@ -1,0 +1,100 @@
+.container{
+    max-width: 50%;
+    margin: 200px auto;
+    text-align: center;
+}
+.text{
+    position: relative;
+}
+.text::before{
+    content: '"';
+    position: absolute;
+    left: -150px;
+    top: -200px;
+    font-size: 78px;
+    transform: rotate(180deg);
+}
+.text::after{
+    content: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos&psig=AOvVaw1nQgZKTOKWxDZqT3hXOlet&ust=1762974746250000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJir6Ozm6pADFQAAAAAdAAAAABAE);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    right: -50px;
+}
+
+/*psevdoelementi*/
+.box{
+    width: 100px;
+    height: 100px;
+    background: #f4f;
+}
+.box:hover{
+    background: red;
+    transition: 200ms;
+}
+.link:hover{
+    color: blue;
+    font-size: 30px;
+}
+.link:visited{
+    color: black;
+}
+.link:active{
+    color: greenyellow;
+}
+.input{
+    width: 330px;
+    padding: 20px;
+}
+.input:focus{
+    outline-color: rgb(237, 151, 13);
+}
+.input::placeholder{
+    font-size: 30px;
+    color: grey;
+}
+li{
+    display: inline-block;
+    position: relative;
+}
+li:not(:first-child){
+    margin-left: 20px;
+}
+li:nth-child(2n+1){
+    color: brown;
+}
+/*psevdoelem*/
+li:nth-child(2n){
+    text-decoration: underline;
+}
+li::after{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #949beb;
+}
+li::before{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a73a7a;
+}
+li:hover::before{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a0e87e;
+    bottom:0;
+}
+li:hover::after{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a0e87e;
+    left: 0;
+}

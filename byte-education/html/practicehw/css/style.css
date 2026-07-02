@@ -1,0 +1,24 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+.header {
+  padding: 53px 0;
+}
+
+.header-item {
+  margin-right: 47px;
+  display: inline-block;
+}
+.header-items {
+  text-align: center;
+}
+.header-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}

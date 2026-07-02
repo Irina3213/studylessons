@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  display: flex;
+}
+.aside {
+  background-color: #1b4342;
+  padding-top: 38px;
+  max-width: 101px;
+  width: 100%;
+  text-align: center;
+}
+.aside__li {
+  margin-bottom: 45px;
+}
+.container {
+  max-width: 1202px;
+  margin: 0 auto;
+  width: 100%;
+}
+.header {
+  background-color: #1b4342;
+  padding: 26px 2px;
+}
+.header__ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__li:not(:last-of-type) {
+  margin-right: 49px;
+}
+.header__li-last {
+  color: #ffffff;
+}
+.gallery__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+.title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: #1b4342;
+}
+.button {
+  border: none;
+  border-radius: 50px;
+  background-color: #1b4342;
+  width: 226px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding: 15px 0;
+}
+
+.gallery__grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 76px;
+}
+.gallery__item {
+  position: relative;
+}
+.gallery__item:hover .gallery__item-abs {
+  display: flex;
+  cursor: pointer;
+}
+
+.gallery__item-abs {
+  position: absolute;
+  background: rgba(35, 35, 35, 0.58);
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.gallery-subtitle{
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}
+.gallery-text{
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.gallery-btn{
+  border: none;
+  border-radius: 50px;
+  background-color: #1b4342;
+  width: 216px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  padding: 15px 0;
+}

@@ -1,0 +1,38 @@
+.container{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.item{
+    border: 2px solid paleturquoise;
+    padding: 30px;
+}
+.item-1{
+    flex: 5;
+    order: 2;
+}
+.item-2{
+    flex: 2;
+    order:1;
+}
+.item-3{
+    flex: 1;
+    order: 3;
+}
+.container-2{
+    display:flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-4{
+    background-color: rgb(234, 168, 168);
+    flex-basis: 200px;
+}
+.item-5{
+    background-color: #92c0d6;
+    flex-basis: 200px;
+}
+.item-6{
+    background-color: #c6e194;
+    flex-basis: 200px;
+}

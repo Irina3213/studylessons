@@ -1,0 +1,40 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+}
+.header{
+    padding: 40px 0;
+}
+
+.header-li{
+    display: inline-block;
+    margin-right: 20px;
+	
+}
+.header-li >a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+
+}
+.header-ul{
+ text-align: center;
+}
+.hero{
+    background-image: url(../bg-hero.png);
+    padding:112px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 72px;
+    line-height:98px;
+    text-align: center;
+    color: #fff;
+}
