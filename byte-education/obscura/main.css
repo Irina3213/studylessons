@@ -143,7 +143,10 @@ button{
 /* STATISTICS */
 .statistics{
     padding: 122px 0 125px;
-    background-image: url("./images/containter.png") center center no-repeat;
+    /* background-image: url(./images/containter.png) center center no-repeat; */
+    background-image: url(./images/containter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .statistics__content{}
@@ -219,6 +222,23 @@ button{
     text-align: right;
     margin-bottom: 20px;
 }
-.lan__item-button{
+.plan__item-button{
     text-align: right;
 }
+/* FORM */
+.form{
+    background-color: #1a1a1a;
+    padding: 120px 160px;
+}
+.form__content{
+    background-color: #000000;
+    padding: 51px 0 60px;
+    text-align: center;
+}
+.form__title{
+    font-family: "Montserrat", sans-serif;
+}
+.form__text{}
+.form__block{}
+.form__input{}
+.form__button{}
