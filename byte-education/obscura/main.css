@@ -292,7 +292,7 @@ button {
 .gallery__icon {
 }
 .gallery__list {
-  dislay: flex;
+  display: flex;
   flex-wrap: wrap;
 }
 .gallery__item {
