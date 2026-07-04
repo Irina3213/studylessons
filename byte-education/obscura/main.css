@@ -443,3 +443,48 @@ button {
   margin-left: 30px;
   vertical-align: middle;
 }
+/* PORTFOLIO */
+.portfolio {
+  background-color: #1a1a1a;
+  padding: 120px 0 80px;
+}
+.container {
+}
+.portfolio__content {
+  text-align: center;
+  margin-bottom: 109px;
+}
+.portfolio__subtitle {
+  font-size: 18px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.portfolio__title {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.portfolio__text {
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+.portfolio__item {
+}
+.portfolio__image {
+}
+.portfolio__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+}
+.button--rotate {
+}
