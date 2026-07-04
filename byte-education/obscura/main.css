@@ -304,3 +304,60 @@ button {
   cursor: pointer;
   opacity: 0.7;
 }
+/* FOOTER */
+.footer {
+  background-color: #000000;
+  padding: 79px 0 81px;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+}
+.footer__content {
+}
+.footer__menu {
+  margin-bottom: 31px;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  align-item: center;
+  gap: 32px;
+  justify-content: center;
+}
+.menu__item {
+}
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.footer__socials {
+  margin-bottom: 30px;
+}
+.socials {
+}
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+.socials__item {
+}
+.socials__link {
+}
+.socials__icon {
+}
+.footer__copyright {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
