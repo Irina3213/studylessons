@@ -30,6 +30,7 @@ button{
     padding: 0;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 .button{
     font-size: 14px;
@@ -238,7 +239,42 @@ button{
 .form__title{
     font-family: "Montserrat", sans-serif;
 }
-.form__text{}
-.form__block{}
-.form__input{}
-.form__button{}
+.form__text{
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    max-width: 644px;
+}
+.form__block{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 543px;
+}
+.form__input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #fff;
+
+    padding-left: 15px;
+    margin-bottom: 30px; 
+}
+.form__button{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    border: 1px solid #fff;
+    padding: 9px 13px;
+
+    align-self: flex-end;
+}
