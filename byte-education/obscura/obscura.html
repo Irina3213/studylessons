@@ -86,27 +86,32 @@
               barriers
             </p>
           </div>
-          <ul class="portfolio__list">
-            <li class="portfolio__item">
-              <img
-                class="portfolio__image"
-                src="./images/desktop-1.png"
-                alt="portfolio image"
-              />
-            </li>
-            <!-- <li class="portfolio__item">
-              <img src="" alt="">
-            </li>
-            <li class="portfolio__item">
+          <div class="portfolio__list-wrapp">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <img
+                  class="portfolio__image"
+                  src="./images/desktop-1.png"
+                  alt="portfolio image"
+                />
+              </li>
+              <li class="portfolio__item">
+                <img src="./images/desktop-1.png" alt="" />
+              </li>
+              <!--<li class="portfolio__item">
               <img src="" alt="">
             </li>
             <li class="portfolio__item">
               <img src="" alt="">
             </li> -->
-          </ul>
+            </ul>
+          </div>
+
           <div class="portfolio__buttons">
-            <button class="button button--rotate">Prev</button>
-            <button class="button">Next</button>
+            <button class="button button--rotate button--portfolio-prev">
+              Prev
+            </button>
+            <button class="button button--portfolio-next">Next</button>
           </div>
         </div>
       </section>
@@ -194,8 +199,8 @@
               </li>
             </ul>
             <div class="feedback__buttons">
-              <button class="button button--rotate">Prev</button>
-              <button class="button">Next</button>
+              <button class="button button--rotate button--prev">Prev</button>
+              <button class="button button--next">Next</button>
             </div>
           </div>
         </div>
@@ -408,5 +413,8 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

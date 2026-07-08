@@ -39,7 +39,7 @@ button {
   border: none;
   cursor: pointer;
 }
-.wrapper{
+.wrapper {
   overflow: hidden;
 }
 .button {
@@ -452,8 +452,7 @@ button {
   background-color: #1a1a1a;
   padding: 120px 0 80px;
 }
-.container {
-}
+
 .portfolio__content {
   text-align: center;
   margin-bottom: 109px;
@@ -475,15 +474,27 @@ button {
   max-width: 620px;
   margin: 0 auto;
 }
+.portfolio__list-wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 .portfolio__list {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  margin-bottom: 86px;
+  margin-bottom: 86px; */
+   display: flex;
+    margin-bottom: 86px;
+    max-width: 700px;
+    /* overflow: hidden; */
 }
 .portfolio__item {
 }
-.portfolio__image {
-}
+/* .portfolio__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px; 
+} */
 .portfolio__buttons {
   display: flex;
   justify-content: space-between;
