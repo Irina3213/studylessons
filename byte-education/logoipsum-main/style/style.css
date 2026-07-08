@@ -1,0 +1,157 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+} */
+
+body{
+  font-family: 'DM Sans',
+  sans-serif;
+}
+
+.container{
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.header, .footer{
+  background-color: rgba(255, 113, 67, 0.27);
+  padding: 38px 0 48px;
+}
+
+.header__flex, .footer__flex, .about, .index{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__li{
+  display: inline-block;
+ 
+}
+
+.nav__li:not(:first-of-type){
+  margin-left: 49px;
+}
+
+.nav__link{
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.468947px;
+  color: #696871;
+  text-decoration: none;
+}
+
+.nav__link:hover{
+  color: #19191B;
+  transition: 300ms;
+}
+
+.button{
+  width: 212px;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.button__orange{
+  background: #FF7143;
+}
+
+.button__orange:hover{
+  background: #e97f5c;
+  transition: 500ms;
+}
+
+.about {
+  margin: 104px auto 85px;
+}
+
+.about__title{
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 77px;
+  letter-spacing: -2.50105px;
+  color: #19191B;
+  max-width: 467px;
+  margin-bottom: 30px;
+}
+
+.about__text{
+  font-family: 'Mulish',
+  sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  color: #696871;
+  max-width: 464px;
+  margin-bottom: 50px;
+}
+
+.button__violet{
+  background: #5454D4;
+}
+
+.button__transparent{
+  background: #FFFFFF;
+  color: #5454D4;
+  border: 1px solid #5454D4;
+  margin-left: 35px;
+}
+
+.index{
+  margin: 117px;
+}
+
+.index__column{
+  margin-left: 170px;
+}
+
+.index__title{
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -1.56316px;
+  color: #19191B;
+  max-width: 556px;
+  /* /* margin-top: 244px; */
+  margin-bottom: 38px; */
+}
+
+.index__right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #7087FF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+  min-width: 302px;
+  padding: 19px 245px 14px 19px;
+}
+
+.button__index{
+  margin-left: 39px;
+}
+
+.footer{
+  padding: 53px 0;
+}
+
