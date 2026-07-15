@@ -22,11 +22,6 @@ body {
 .logo > div:first-child {
   margin-right: 15px;
 }
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo-bold {
   color: #2b292d;
   font-weight: 700;
@@ -39,6 +34,12 @@ body {
   line-height: 25px;
   color: rgba(43, 41, 45, 0.6);
 }
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-li {
   display: inline-block;
 }
@@ -54,7 +55,7 @@ body {
 .header-li:not(:last-child) {
   margin-right: 20px;
 }
-.header-nav > div {
+.header__nav > div {
   margin-left: 75px;
 }
 .button {
@@ -65,13 +66,16 @@ body {
   padding: 17px 26px;
   border-radius: 2px;
   cursor: pointer;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     ),
     #3040c4;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 4px 6px 0 rgba(0, 0, 0, 0.05),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
     inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 .button:hover {
