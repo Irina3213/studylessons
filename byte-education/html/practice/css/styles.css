@@ -102,10 +102,158 @@ body {
   left: 30px;
 }
 .form-button {
+  font-weight: 700;
+  font-size: 24px;
   background-color: #000;
   color: #fff;
   width: 100%;
   border-radius: 10px;
   padding: 15px 0;
   border: none;
+  text-align: center;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.checkbox-wrapper label {
+  position: relative;
+  padding-left: 26px; /* Выделяем место слева под наш кубик */
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-wrapper label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #ccc; /* Тот самый серый цвет */
+  border-radius: 2px; /* Легкое закругление углов */
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label::before {
+  background-color: #000;
+}
+.checkbox-link {
+  color: #312fa7;
+}
+/* PICTURE */
+.picture {
+  margin-bottom: 140px;
+}
+.picture-list {
+  display: flex;
+  gap: 80px;
+}
+/* TEXT */
+.text {
+  max-width: 773px;
+  position: relative;
+  padding: 50px 0;
+}
+.text-text {
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+.text-text::before,
+.text-text::after {
+  /* Мы используем не дефисы, а правильные символы кавычек (U+201C и U+201D) */
+  color: #174648;
+  font-weight: 700;
+  font-size: 72px; /* Размер как в макете */
+  font-family: serif; /* Шрифт с засечками для красивой формы */
+
+  /* МАГИЯ ЗДЕСЬ: отрываем от текста */
+  position: absolute;
+  line-height: 1;
+}
+.text-text::before {
+  content: " '' ";
+  top: -60px;
+  left: -60px;
+  transform: rotate(180deg);
+}
+.text-text::after {
+  content: " '' ";
+  bottom: -60px;
+  right: -60px;
+}
+/* LIST */
+.lorem {
+  margin-bottom: 50px;
+}
+.columns-list {
+  display: flex;
+  gap: 77px;
+  width: 100%;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  align-items: flex-start;
+}
+
+.column-item {
+  padding: 21px 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Первый элемент списка */
+.column-item:nth-child(1) {
+  color: #000;
+  background-color: #b4e8eb;
+  flex: 2 1 0%;
+}
+.column-item:nth-child(2) {
+  color: #000;
+  background-color: #917cbf;
+  flex: 2 1 0%;
+}
+
+.column-item:nth-child(3) {
+  color: #000;
+  background-color: #f46b6b;
+  flex: 1 1 0%;
+}
+.column-title {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.column-text {
+  font-size: 18px;
+}
+.lorem-div-img {
+  text-align: center;
+  margin-bottom: 20px;
 }
