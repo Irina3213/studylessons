@@ -1,23 +1,28 @@
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-ul{
-    display: flex;
-    gap: 24px;
+ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
-a{
-    border: 2px solid blue;
-    border-radius: 24px;
-    padding: 15px 20px;
-    transition: all .5s;
+a {
+  border: 2px solid blue;
+  border-radius: 24px;
+  padding: 15px 20px;
+  transition: all 0.5s;
 }
-a:hover, a:focus{
-    background-color: blueviolet;
-    color: #fff;
+a:hover,
+a:focus {
+  background-color: blueviolet;
+  color: #fff;
 }
