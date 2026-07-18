@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+  background-color: rgb(177, 177, 240);
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 24px;
+}
+ul {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+li:hover,
+li:focus {
+  background-color: blueviolet;
+  color: #fff;
+}
+a:hover,
+a:focus {
+  color: #fff;
+}
