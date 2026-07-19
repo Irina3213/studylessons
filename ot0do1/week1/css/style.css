@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid red;
+}
+/* div{
+    font-size: 50px;
+} */
+.content {
+  font-size: 50px;
+}
+#text {
+  font-style: italic;
+}
+img {
+  width: 500px;
+}
