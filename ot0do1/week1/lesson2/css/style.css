@@ -5,8 +5,36 @@
   width: 1200px;
   margin: 0 auto;
 }
+.arrow {
+  width: 50px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+}
 .title {
+  margin-top: 30px;
   text-align: center;
+  font-size: 36px;
+}
+/* .title-1 {
+  font-size: 0;
+  margin: 25px 0 50px;
+} */
+.title-1::before {
+  content: ' " ';
+  width: 50px;
+  height: 50px;
+}
+.title-1::after {
+  content: ' " ';
+  width: 50px;
+  height: 50px;
+}
+.title-1:hover {
+  color: blueviolet;
+  text-decoration: underline;
 }
 .text-1 {
   font-size: 20px;
@@ -14,6 +42,10 @@
   margin: 50px 35px 70px 20px;
   padding: 50px 35px 38px 35px;
   border: 2px solid yellowgreen;
+}
+.text-1:hover {
+  background-color: rgb(165, 232, 237);
+  color: rgb(0, 106, 255);
 }
 .text-2 {
   font-size: 18px;
