@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ece8b6;
+  justify-content: space-between;
+  gap: 10px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #000;
+  text-align: center;
+  font-size: 50px;
+  line-height: 200px;
+  background-color: #03f869;
+}
