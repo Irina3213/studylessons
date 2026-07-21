@@ -1,0 +1,39 @@
+.wrapper {
+  margin: 0 auto;
+  width: 1090px;
+}
+.title {
+  text-align: center;
+  font-size: 48px;
+}
+.text {
+  font-size: 16px;
+}
+img {
+  display: block;
+  max-width: 400px;
+  min-height: 500px;
+
+  margin: 0 auto;
+}
+.items {
+}
+.item-item a {
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+.item-item a:hover {
+  color: rgba(230, 3, 251, 0.601);
+}
+.text-1 {
+  font-style: italic;
+}
+.title-2 {
+  text-align: center;
+  font-size: 24px;
+}
+.list {
+}
+.list-item {
+}
