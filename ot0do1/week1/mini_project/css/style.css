@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  background-image: url(../images/fone.jpg);
+}
