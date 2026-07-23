@@ -11,17 +11,62 @@
       rel="stylesheet"
     />
     <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/slick.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">Меню О нас Доставка Адрес Контакты</header>
-      <main class="main">
-        <h1>Спагетти карбонара</h1>
-        <p>Традиционный итальянский рецепт - изысканный вкус и наслаждение</p>
-      </main>
+      <div class="container">
+        <header class="header">
+          <a class="logo" href="#">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a href="#">Меню</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Адрес</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main">
+          <div class="slider">
+            <div class="item">
+              <h2 class="title">Спагетти карбонара</h2>
+              <p class="text">
+                Традиционный итальянский рецепт - изысканный вкус и наслаждение
+              </p>
+            </div>
+            <div class="item">
+              <h2 class="title">Спагетти карбонара</h2>
+              <p class="text">
+                Традиционный итальянский рецепт - изысканный вкус и наслаждение
+              </p>
+            </div>
+            <div class="item">
+              <h2 class="title">Спагетти карбонара</h2>
+              <p class="text">
+                Традиционный итальянский рецепт - изысканный вкус и наслаждение
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="./js/slick.min.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
