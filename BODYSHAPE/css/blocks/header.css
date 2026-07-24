@@ -1,0 +1,51 @@
+.header {
+	height: 750px;
+	padding-top: 30px;
+
+	/* background-image: url('./../../img/hero/hero-bg.jpg'); */
+
+	background-image: image-set(
+		url('./../../img/hero/hero-bg.jpg') 1x,
+		url('./../../img/hero/hero-bg@2x.jpg') 2x
+	);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* @media (min-resolution: 192dpi)  {
+	.header {
+		background-image: url('./../../img/hero/hero-bg@2x.jpg');
+	}
+} */
+
+.header-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-list {
+	display: flex;
+	gap: 50px;
+
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: 700;
+	letter-spacing: 3px;
+	font-size: 16px;
+
+}
+
+.header-list a {
+	transition: all 0.2s ease-in;
+}
+
+.header-list a:hover {
+	opacity: 0.8;
+}
+
+.header-img {
+	padding-top: 125px;
+	text-align: right;
+}
