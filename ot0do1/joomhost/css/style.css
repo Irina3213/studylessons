@@ -40,8 +40,9 @@ body {
   display: flex;
 }
 
-.menu__list li {
-  padding-left: 38px;
+.menu__list li + li {
+  /* padding-left: 38px; */
+  margin-left: 38px;
 }
 
 /* .menu__item {
@@ -101,20 +102,24 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 3px;
-  /* padding-left: 24px; */
+  padding-left: 24px;
   position: relative;
 }
 
 .top-info__list li::before {
   content: "";
-  background-image: url(../images/list-icon.png);
+  display: inline-block;
+  background-image: url("../images/list-icon.png");
   width: 13px;
   height: 13px;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffffff;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .top-info__item {
 }
@@ -194,22 +199,93 @@ body {
 .price__descr {
   text-align: center;
   max-width: 594px;
-  margin: 35px auto 0;
+  margin: 35px auto 125px;
 }
-.price__items {
+.price-items {
   display: flex;
+  justify-content: space-between;
 }
 .price-item {
+  max-width: 360px;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  padding: 0 50px 60px;
+  position: relative;
+  overflow: hidden;
 }
 .price-item__number {
+  width: 265px;
+  height: 465px;
+  color: #fff;
+  background: #2c7de8;
+  position: absolute;
+
+  border-radius: 136px;
+  top: -370px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.price-item__number span {
+  font-size: 16px;
 }
 .price-item__images {
+  padding-top: 120px;
+  text-align: center;
+  margin-bottom: 30px;
+  min-height: 243px;
 }
 .price-item__title {
+  margin-bottom: 25px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #2c7de8;
 }
 .price-item__text {
+  margin-bottom: 50px;
 }
 .price-item__list {
+  margin-bottom: 75px;
+  list-style-type: none;
+}
+.price-item__list li {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-left: 36px;
+  position: relative;
+}
+.price-item__list li::before {
+  content: "";
+  background-image: url(../images/check.png);
+  width: 15px;
+  height: 11px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .price-item__btn {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #2c7de8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px 10px;
 }
