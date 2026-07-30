@@ -32,7 +32,7 @@ body {
   margin-right: 35px;
 }
 .nav {
-  margin-top: 43px;
+  margin-top: 37px;
 }
 .nav-list {
   display: flex;
@@ -41,10 +41,16 @@ body {
 .nav-list__item {
   font-weight: 500;
   font-size: 24px;
-  transition: 0.3s;
 }
-.nav-list__item:hover {
-  color: rgb(246, 162, 7);
+.nav-list__item a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+  line-height: 28px;
+}
+.nav-list__item a:hover {
+  color: rgb(220, 181, 108);
 }
 .wrapper {
 }
@@ -60,6 +66,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   margin-bottom: 46px;
+  max-width: 674px;
 }
 .slick-dots {
   list-style: none;
