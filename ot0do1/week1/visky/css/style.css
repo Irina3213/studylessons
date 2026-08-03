@@ -18,8 +18,10 @@ body {
   min-height: 100vh;
 }
 .header {
+  padding-top: 46px;
   display: flex;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   margin-bottom: 240px;
 }
 .container {
@@ -29,11 +31,12 @@ body {
   padding: 46px 0 423px;
 }
 .logo {
+  display: block;
   margin-right: 35px;
 }
-.nav {
+/* .nav {
   margin-top: 37px;
-}
+}  */
 .nav-list {
   display: flex;
   gap: 25px;
