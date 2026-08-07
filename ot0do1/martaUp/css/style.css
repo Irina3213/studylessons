@@ -14,7 +14,7 @@ a{
   color: inherit;
 }
 .header{
-  background-image: url("../images/backgraund.png");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: top center;
@@ -51,7 +51,7 @@ a{
 .menu__list a:hover{
   opacity: 1;
 }
-.sign-up{
+.sign{
   color: #250f8a;
   text-transform: uppercase;
   font-weight: 600;
