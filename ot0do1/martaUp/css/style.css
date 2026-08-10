@@ -111,8 +111,52 @@ a{
   width: 7px;
   cursor: pointer;
   outline: none;
+  margin: 10px auto;
+  display: block;
 }
 .header-dots .slick-active button{
   width: 15px;
   opacity: 1;
+}
+
+/* specialised */
+.specialised{
+  padding: 55px 0 93px;
+  background-image: url(../images/design.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  color: #202020;
+  text-align: center;
+}
+.specialised__title{
+  margin-bottom: 96px;
+}
+.title{
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.specialised__items{
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.sp35ecialised__item{
+  width: 280px;
+}
+.specialised__item-img{
+  margin-bottom: 23px;
+  min-height: 159px;
+}
+.specialised__item-title{
+  margin-bottom: 11px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.specialised__item-text{
+  padding: 0 10px;
+  color: #272727;
+  opacity: 0.7;
 }
