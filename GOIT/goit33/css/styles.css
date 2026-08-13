@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+li{
+    padding: 25px 35px;
+    border: 2px solid #e977df;
+    background-color: #76acbd;
+    border-radius: 25px;
+    list-style-type: none;
+}
+a{  
+    color:blue;
+}

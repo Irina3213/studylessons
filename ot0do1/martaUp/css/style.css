@@ -121,6 +121,7 @@ a{
 
 /* specialised */
 .specialised{
+  background-color: #fff;
   padding: 55px 0 93px;
   background-image: url(../images/design.svg);
   background-position: left bottom;
