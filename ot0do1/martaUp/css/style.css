@@ -303,11 +303,25 @@ a{
 @media(max-width: 570px){
   .menu__list{
     display: none;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-color: #1a50a8;
   }
   .menu__btn{
     width: 20px;
     height: 20px;
     position: relative;
+
+  }
+  .menu__list li + li {
+    padding-left: 0;
+  }
+  .menu__list a{
+    display: block;
+    padding: 10px 0'
   }
   .menu__btn span{
     width: 100%;
@@ -331,6 +345,13 @@ a{
     bottom: 0;
   }
 }
+
 @media(max-width: ){}
 @media(max-width: ){}
-@media(max-width: ){}
+
+@media(min-width: 570px){
+  .menu__list{
+    display: flex !important;
+  }
+  
+}
