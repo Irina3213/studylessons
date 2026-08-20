@@ -59,6 +59,10 @@ a{
   padding: 8px 43px;
   border-radius: 20px;
 }
+.menu__btn {
+  display: none;
+  cursor: pointer;
+}
 /* header slider */
 .header-slider{
   padding-top: 111px;
@@ -107,7 +111,7 @@ a{
   position: absolute;
   right: 0;
   top: 50%;
-
+  transform: translateY(-50%);
 }
 .header-dots button{
   border: none;
@@ -251,7 +255,7 @@ a{
   border-radius: 50%;
   margin-right: 20px;
 }
-.reviews__item-info{}
+
 .reviews__item-name{
   font-weight: 600;
 
@@ -288,6 +292,32 @@ a{
 .footer__inner-link a + a{
   margin-left: 20px;
 }
+
+/* adaptive */
+@media(max-width: 1201px){
+  .specialised{
+    background-size: 60px;
+  }
+}
+@media(max-width: 1190px){
+  .header-slider__item-images{
+    margin: 50px 20px 0 0;
+  }
+  .header-slider__item-images img{
+    width: 80%;
+  }
+  .header-slider__item-info{
+    padding: 50 0;
+  }
+  .header-slider{
+    padding-top: 25px;
+  }
+}
+@media(max-width: 1080px){
+  .specialised{
+    background-image: none;
+  }
+}
 @media(max-width: 924px){
   .header__top{
     flex-wrap: wrap;
@@ -300,6 +330,17 @@ a{
     margin-right: 30px;
   }
 }
+@media(max-width: 924px){
+  .header-slider__item-images{
+    display: none;
+  }
+}
+@media(max-width: 775px){
+  .specialised{
+    padding: 20px 0 40px;
+  }
+  
+}
 @media(max-width: 570px){
   .menu__list{
     display: none;
@@ -309,19 +350,20 @@ a{
     left: 0;
     text-align: center;
     background-color: #1a50a8;
+    z-index: 55;
   }
   .menu__btn{
     width: 20px;
     height: 20px;
     position: relative;
-
+    display: block;
   }
   .menu__list li + li {
     padding-left: 0;
   }
   .menu__list a{
     display: block;
-    padding: 10px 0'
+    padding: 10px 0;
   }
   .menu__btn span{
     width: 100%;
@@ -344,9 +386,25 @@ a{
   .menu__btn::before{
     bottom: 0;
   }
+  .header-slider__item-info{
+    padding: 10px 30px 10px 0;
+  }
+  .header{
+    min-height: 580px;
+  }
+  .header-slider__descr{
+    
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+  header-slider_title{
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 
-@media(max-width: ){}
+
 @media(max-width: ){}
 
 @media(min-width: 570px){
