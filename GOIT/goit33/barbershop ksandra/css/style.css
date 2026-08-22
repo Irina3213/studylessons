@@ -154,11 +154,21 @@ a {
 }
 
 /* === HERO === */
+/* .hero {
+  background-image: url('../images/header.jpg');
+  padding-left: 215px;
+  padding-top: 184px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 .hero .container {
   /* временный бэкграунд */
   background: black;
+
   padding-left: 215px;
   padding-top: 184px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-pretitle {
@@ -538,7 +548,9 @@ a {
 .signform textarea:active {
   color: var(--white-text);
 }
-
+textarea {
+  resize: none;
+}
 .online-sign {
   /* display: block; */
   margin-top: 44px;
