@@ -1,0 +1,78 @@
+{
+	"name": "css-responsive",
+	"displayName": "CSS Responsive",
+	"description": "Simple extension to change a mathematic expression to percent. Usefull in css's file where you can't use mathematic expression!",
+	"version": "1.1.2",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"publisher": "mrezechi3l",
+	"homepage": "https://github.com/Ezechi3l/vscode-css-responsive",
+	"keywords": [
+		"CSS",
+		"css",
+		"percent",
+		"px to percent",
+		"responsive css",
+		"responsive CSS"
+	],
+	"activationEvents": [
+		"onLanguage:html",
+		"onLanguage:vue",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:sass",
+		"onLanguage:stylus"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ezechi3l/vscode-css-responsive"
+	},
+	"bugs": {
+		"url": "https://github.com/Ezechi3l/vscode-css-responsive/issues",
+		"email": "mrezechi3l@gmail.com"
+	},
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "CSS Responsive",
+			"properties": {
+				"CSSResponsive.comments": {
+					"type": "boolean",
+					"default": true,
+					"description": "Add the division as commentary, default: true"
+				},
+				"CSSResponsive.fixedDigits": {
+					"type": "number",
+					"default": 6,
+					"description": "Define the number of decimals, default: 6"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.38.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	},
+	"__metadata": {
+		"installedTimestamp": 1741336452759,
+		"size": 4325109
+	}
+}
