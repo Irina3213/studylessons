@@ -89,6 +89,7 @@ a {
 /* === HEADER === */
 .header {
   /* временный бэкграунд */
+  background-color: black;
   color: white;
   position: relative;
 }
