@@ -1,0 +1,74 @@
+/* ОБЩИЕ СТИЛИ ДЛЯ ВСЕГО ДОКУМЕНТА */
+
+/* применяем основное семейство шрифтов для всего документа и ссылок */
+body,
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+.header {
+  /* временный бэкграунд */
+  /* background-color: black; */
+  color: white;
+  position: relative;
+}
+.header .container {
+  background-color: black;
+}
+.header a {
+  /* варианты применения белого цвета ссылкам */
+  /* color: white; */
+
+  /* наследование цвета ссылками от хэдэра */
+  /* color: inherit; */
+  /* color: currentColor; */
+
+  /* назначение цвета через переменную */
+  color: var(--white-text);
+  font-size: 12px;
+}
+.header-nav,
+.nav-list,
+.contacts-list {
+  display: flex;
+}
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 28px;
+}
+.nav-list li {
+  margin-left: 40px;
+}
+
+.contacts-list {
+  margin-left: 322px;
+}
+.contacts-list li:not(:last-child) {
+  margin-right: 40px;
+}
+.header .media-list {
+  position: absolute;
+  bottom: -399px;
+  /* left: -42px; */
+  transform: rotate(-90deg);
+  z-index: 2;
+}
+
+/* === HERO === */
+.hero .container {
+  /* временный бэкграунд */
+  background: black;
+
+  padding-left: 215px;
+  padding-top: 184px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
