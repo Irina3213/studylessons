@@ -1,5 +1,5 @@
 /* переменные - удалить при подключении отдельного файла с переменными */
-/* :root {
+:root {
   --white-text: rgba(255, 255, 255, 1);
 
   --grey-text: rgba(157, 164, 189, 1);
@@ -12,7 +12,7 @@
   --orange: rgba(255, 108, 0, 1);
 
   --back-light-grey: rgba(247, 247, 247, 1);
-} */
+}
 
 /* ОБЩИЕ СТИЛИ ДЛЯ ВСЕГО ДОКУМЕНТА */
 
@@ -30,6 +30,9 @@ a {
 
 /* общие стили для всех предзаголовков */
 .pretitle {
+  display: flex;
+  align-items: center;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -38,13 +41,24 @@ a {
   text-transform: uppercase;
 }
 
+.pretitle::before {
+  display: inline-block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--graphite);
+
+  margin-right: 20px;
+}
+
 /* переназначаем шрифт для заголовков секций через общий класс */
 .title {
+  margin: 20px 0;
+
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  margin: 20px 0;
 }
 
 /* общие стили для всех предзаголовков */
@@ -80,16 +94,25 @@ a {
 
 .media-list {
   display: flex;
+  align-items: center;
 }
 
-.media-list li {
-  margin-left: 40px;
+.media-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  /* background-color: var(--graphite); */
+  background-color: white;
+  margin-right: 40px;
+}
+
+.media-list li:first-child {
+  margin-right: 40px;
 }
 
 /* === HEADER === */
 .header {
   /* временный бэкграунд */
-  background-color: black;
   color: white;
   position: relative;
 }
@@ -131,6 +154,7 @@ a {
 .contacts-list {
   margin-left: 322px;
 }
+
 /* 1 способ */
 /* .contacts-list li:last-child {
   margin-left: 40px;
@@ -149,33 +173,25 @@ a {
 .header .media-list {
   position: absolute;
   bottom: -399px;
-  /* left: -42px; */
   transform: rotate(-90deg);
   z-index: 2;
 }
 
 /* === HERO === */
-.hero {
-  /* background-image: url('../images/header.jpg');
-  padding-left: 215px;
-  padding-top: 184px;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-  padding-bottom: 40px;
-}
 .hero .container {
-  /* временный бэкграунд */
   background: black;
-
   padding-left: 215px;
   padding-top: 184px;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .hero-pretitle {
   color: var(--grey-text-op60);
+}
+
+.hero .pretitle::before,
+.services .pretitle::before,
+.contacts .pretitle::before {
+  background-color: var(--grey-text-op60);
 }
 
 .hero-title {
@@ -185,8 +201,6 @@ a {
   letter-spacing: 0.05em;
 
   color: var(--white-text);
-
-  margin: 20px 0;
 }
 
 .hero-desc {
@@ -197,7 +211,7 @@ a {
 
 .hero-btns {
   text-align: right;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .hero-btn:first-child {
@@ -277,8 +291,6 @@ a {
 
   display: flex;
   flex-flow: column;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
 }
 
 .tables-wrapper {
@@ -340,7 +352,7 @@ a {
   margin-right: 130px;
 }
 
-.showlist li {
+.show-list li {
   width: 170px;
   height: 133px;
 }
@@ -428,9 +440,43 @@ a {
 }
 
 .social-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  background-color: white;
+
+  border-radius: 50%;
 }
+
+.social-icons a,
+.social-icons svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+  /* padding: 5px; */
+}
+
+.social-icons a:hover {
+  color: var(--orange);
+}
+
+.social-icons a {
+  color: var(--graphite);
+}
+
+.social-icons svg {
+  width: 20px;
+  fill: currentColor;
+}
+
+/* 
+.social-icons svg:hover {
+  fill: var(--orange);
+} */
 
 .social-icons li:not(:last-child) {
   margin-right: 10px;
@@ -553,9 +599,7 @@ a {
 .signform textarea:active {
   color: var(--white-text);
 }
-textarea {
-  resize: none;
-}
+
 .online-sign {
   /* display: block; */
   margin-top: 44px;
@@ -565,8 +609,28 @@ textarea {
   margin-bottom: 70px;
 }
 
-/* .contacts-links a {
-} */
+.contacts-links a::before {
+  content: '';
+  display: block;
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  background: white;
+}
+
+.contacts-links a:nth-child(1)::before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url(../images/icons/map.svg);
+}
+
+.contacts-links a:nth-child(2)::before {
+  background: url(../images/icons/phone.svg);
+}
+
+.contacts-links a:nth-child(3)::before {
+  background: url(../images/icons/mail.svg);
+}
 
 /* ============= */
 
@@ -580,6 +644,10 @@ textarea {
   letter-spacing: 0.02em;
 
   color: var(--grey-text);
+}
+
+.contacts-links a {
+  display: flex;
 }
 
 .contacts-links a[name='mail'] {

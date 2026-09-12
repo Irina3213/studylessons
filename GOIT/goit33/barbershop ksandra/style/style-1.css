@@ -49,29 +49,11 @@ a {
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
-  }
-
-.pretitle::before{
-  display: inline-block;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--graphite);
-
-  margin-right: 20px;
-
 }
 
 /* переназначаем шрифт для заголовков секций через общий класс */
 .title {
-  display: flex;
   font-family: 'Raleway', sans-serif;
-
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  margin: 20px 0;
 }
 
 /* общие стили для всех предзаголовков */
@@ -105,28 +87,17 @@ a {
   color: var(--white-text);
 }
 
-.media-list{ 
-  display: flex;
-  align-items: center;
-}
-
-.media-list::before{
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: var(--graphite);
-  margin-right: 40px;
-}
-
-.media-list li:first-child {
-  margin-right: 40px;
-}
-
 /* === HEADER === */
 .header {
   /* временный бэкграунд */
   background-color: black;
   color: white;
+
+  position: relative;
+}
+
+.header .container {
+  background-color: #000;
 }
 
 .header-nav,
@@ -152,24 +123,27 @@ a {
   margin-left: 322px;
 }
 
-.contacts-list::before{
-  content: "";
-  width: 10px;
-  height: 3px;
-}
-
 .contacts-list li:last-child {
   margin-left: 40px;
 }
 
-
-.header .media-list {
+.media-list {
   position: absolute;
   bottom: -399px;
   left: -42px;
   transform: rotate(-90deg);
   z-index: 2;
+}
 
+.media-list::before {
+  content: ''";
+  width: 1px;
+  height: 60px;
+  background-color: grey;
+}
+
+.media-list li:not(:last-child) {
+  margin-left: 40px;
 }
 
 .header a {
@@ -408,3 +382,13 @@ a {
 .footer a {
   color: var(--graphite);
 }
+
+
+
+
+
+
+
+
+/* code */
+.online-sign:hover
