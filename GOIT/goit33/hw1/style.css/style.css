@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li,a {
 .header-contacts a:focus {
   color: var(--accent-color);
 } */
+
+
+
+
+
 /* HERO */
 .hero {
   background-color: var(--bg-hero);
@@ -99,6 +104,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li,a {
   padding: 10px 32px;
   transition: background-color 250ms linear;
 }
+
+
 
 /* PRIORITY */
 .priority {

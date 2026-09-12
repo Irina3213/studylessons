@@ -341,30 +341,53 @@ a {
   justify-content: center;
   padding-top: 121px;
   padding-bottom: 130px;
+
+  align-items: flex-start;
 }
 
 .showlist {
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 
-  width: 400px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 370px; /* 170 + 30 + 170 */
+  margin: 0 130px 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* width: 400px; */
   /* height: 300px; */
-  margin-right: 130px;
+  /* margin-right: 130px; */
 }
 
-.show-list li {
+.showlist li {
   width: 170px;
   height: 133px;
+
+  background: var(--back-light-grey);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+  box-sizing: border-box;
 }
 
 .showlist li:nth-child(2n + 1) {
   margin-right: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .showlist li:nth-child(2n) {
   /* margin-right: 30px; */
   margin-top: 30px;
+}
+
+.showlist li:nth-child(1) {
+  margin-bottom: 30px;
 }
 
 /* .showlist li:nth-child(1) {
@@ -374,7 +397,7 @@ a {
 .showlist li:nth-child(3) {
   margin-right: 30px;
 } */
-
+/* 
 .oldschool-content {
   display: flex;
   flex-flow: column;
@@ -420,6 +443,67 @@ a {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
+} */
+
+.showlist-num {
+  position: relative;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--graphite);
+  margin: 0;
+}
+
+/* Оранжевый плюс */
+.showlist-num::after {
+  content: '+';
+  position: absolute;
+  top: 7px;
+  right: -12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.showlist-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--graphite);
+  margin: 0;
+}
+
+.oldschool-content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.oldschool-pretitle {
+  position: relative;
+  margin-top: 9px;
+  color: var(--graphite);
+}
+
+/* Линия перед предзаголовком */
+.oldschool-pretitle::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--graphite);
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.oldschool-desc {
+  color: var(--graphite-light);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 /* === MASTERS === */

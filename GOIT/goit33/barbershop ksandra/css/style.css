@@ -352,9 +352,15 @@ a {
   margin-right: 130px;
 }
 
-.show-list li {
+.showlist li {
   width: 170px;
   height: 133px;
+
+  background: var(--back-light-grey);
+
+  flex-flow: column;
+  align-items: center;
+  padding: 20px 24px;
 }
 
 .showlist li:nth-child(2n + 1) {
@@ -398,21 +404,27 @@ a {
   letter-spacing: 0.02em;
 }
 
-.showlist li {
-  background: var(--back-light-grey);
-
-  flex-flow: column;
-  align-items: center;
-  padding: 20px 24px;
-}
-
 .showlist-num {
+  position: relative;
+
   font-weight: bold;
   font-size: 42px;
   line-height: 1.36;
   text-align: center;
 
   letter-spacing: 0.05em;
+
+  margin: 0;
+}
+
+.showlist-num::after {
+  content: '+';
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--orange);
 }
 
 .showlist-text {
