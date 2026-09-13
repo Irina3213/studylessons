@@ -97,3 +97,6 @@
   letter-spacing: 0.03em;
   color: var(--grey-text);
 }
+.footer-items {
+  margin-left: -42px;
+}
