@@ -1,27 +1,45 @@
-
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-optical-sizing: auto;
-	font-style: normal;
-	font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-	background-color: #F8F7F5;
+  font-style: normal;
+  font-weight: 400;
+
+  background-color: #f8f7f5;
+
+  /* padding-bottom: 600px; */
 }
 
 .nunito {
-	font-family: 'Nunito', sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1806px;
-	width: 100%;
-	padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1806px;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .container--small {
-	max-width: 1144px;
+  max-width: 1144px;
+}
+
+.none {
+  display: none !important;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.nunito-font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
 }

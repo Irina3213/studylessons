@@ -8,7 +8,10 @@
 /* Blocks */
 @import './btn.css';
 
-/* Sections*/
+/* Sections */
 @import './nav.css';
 @import './header.css';
 @import './section.css';
+@import './slider.css';
+@import './section-pane-footer.css';
+@import './footer.css';
