@@ -6,9 +6,9 @@
     <title>Modal</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header fixed">
       <div class="container">
-        <a class="link" href="#">main</a>
+        <a class="link current" href="#">main</a>
       </div>
     </header>
     <div class="container">
@@ -56,9 +56,12 @@
     </div>
 
     <script>
-      const header = document.querySelector(".page-header");
-      const { height } = header.getBoundingClientRect();
-      console.log(height);
+      (() => {
+        const header = document.querySelector(".page-header");
+        const { height } = header.getBoundingClientRect();
+        documtnt.body.style = `padding-top: ${height}px`;
+        console.log(height);
+      })();
     </script>
   </body>
 </html>
