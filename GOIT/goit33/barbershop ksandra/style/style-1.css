@@ -159,7 +159,7 @@ a {
 .hero .container {
   position: relative;
   /* временный бэкграунд */
-  background: black;
+  /* background: black; */
 
   padding-top: 184px;
   padding-left: 215px;

@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "balqis";
+  src:
+    url("../fonts/balqis.woff2") format("woff2"),
+    url("../fonts/balqis.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src:
+    url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-LightItalic";
+  src:
+    url("../fonts/RobotoCondensed-LightItalic.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src:
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "RobotoCondensed-Light";
+  color: #000000;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "RobotoCondensed-Regular";
+}
+.menu {
+}
+.menu__list {
+}
+.menu__list-item {
+  display: inline-block;
+}
+
+.menu__list-item:not(:last-child) {
+  margin-right: 52px;
+}
+.menu__list-link {
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus {
+  text-decoration: underline;
+}
+
+.header__phone {
+  position: relative;
+  padding-left: 40px;
+}
+.header__phone::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/phone.svg");
+  left: 0;
+  position: absolute;
+}
+
+.header__title {
+  font-family: "balqis";
+  padding-top: 152px;
+  text-align: center;
+  font-size: 250px;
+  line-height: 334px;
+  font-weight: 400;
+}
+
+.header__title span {
+  display: block;
+  text-align: right;
+  font-size: 56px;
+  line-height: 66px;
+  font-family: "RobotoCondensed-LightItalic";
+  margin-top: -66px;
+  margin-right: 85px;
+}

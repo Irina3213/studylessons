@@ -37,14 +37,30 @@
               <a href="#contacts" class="nav-link">Контакты</a>
             </li>
           </ul>
-          <ul class="contacts-list">
-            <li>
+          <div class="contacts-list">
+            <!-- <li>
               <a href="tel:+380441111111" class="nav-link">+38044 111 11 11</a>
             </li>
             <li>
-              <a href="#onlinesign" class="online-sign">онлайн-запись</a>
-            </li>
-          </ul>
+              <button
+                data-toggle-backdrop-sign
+                href="#onlinesign"
+                class="online-sign"
+              >
+                онлайн-запись
+              </button>
+            </li> -->
+
+            <a href="tel:+380441111111" class="nav-link">+38044 111 11 11</a>
+
+            <button
+              data-toggle-backdrop-sign
+              href="#onlinesign"
+              class="online-sign"
+            >
+              онлайн-запись
+            </button>
+          </div>
           <ul class="media-list">
             <li>
               <a href="#" class="nav-link">instagram</a>
@@ -61,12 +77,15 @@
       <section class="hero">
         <!-- CONTAINER -->
         <div class="container">
-          <p class="hero-pretitle pretitle">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title title">BarberShop</h1>
-          <p class="hero-desc short-desc">
-            Мы эксперты в модных мужских стрижках. <br />
-            Работаем быстро, осторожно и со вкусом.
-          </p>
+          <div class="hero-descr">
+            <p class="hero-pretitle pretitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title title">BarberShop</h1>
+            <p class="hero-desc short-desc">
+              Мы эксперты в модных мужских стрижках. <br />
+              Работаем быстро, осторожно и со вкусом.
+            </p>
+          </div>
+
           <div class="hero-btns">
             <button class="hero-btn">назад</button>
             <button class="hero-btn">вперед</button>
@@ -423,5 +442,13 @@
       </div>
       <!-- CONTAINER -->
     </footer>
+
+    <div data-backdrop-sign class="backdrop-sign is-hidden">
+      <div class="modal-sign">
+        <button data-toggle-backdrop-sign>Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
