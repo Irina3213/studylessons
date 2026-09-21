@@ -774,6 +774,9 @@ body {
     font-size: 69px;
     margin-top: 30px;
   }
+  /* .price__title span{
+    margin-left: 120px;
+  } */
 }
 @media (max-width: 370px) {
   .header__title {
