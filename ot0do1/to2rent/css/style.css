@@ -121,7 +121,7 @@ body {
   line-height: 24px;
   margin-right: 69px;
 }
-.search__for-input {
+.search__form-input {
   height: 70px;
   padding-left: 0 15px;
   border: 2px solid #c4c4c4;
@@ -131,7 +131,7 @@ body {
   width: 156px;
 }
 
-.search__for-input::placeholder {
+.search__form-input::placeholder {
   font-family: "Roboto Condensed", sans-serif;
   color: #888;
   font-size: 18px;
@@ -179,6 +179,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 100px 0;
+  flex-wrap: wrap;
 }
 .popular__item {
 }

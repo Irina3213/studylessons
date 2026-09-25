@@ -7,5 +7,13 @@ $(function () {
       <img src="./images/prev.svg" alt="prev arrow" />
     </button>`,
     fade: true,
+    responsive: [
+      {
+        brakpoint: 441,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 });
